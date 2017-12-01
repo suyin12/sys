@@ -1,0 +1,14 @@
+{
+  "name": "blog",
+  "type": "project",
+  "require":{
+    "noahbuscher/macaw": "dev-master",
+    "illuminate/database": "*"
+  },
+  "autoload":{
+    "psr-4": {
+      "app\\": "app/"
+
+    }
+  }
+}
