@@ -5,10 +5,13 @@
 namespace app\controllers;
 
 use app\models\Article;
+use services\View;
+use services\Mail;
 
 class HomeController extends BaseController{
     public function home(){
+
         $article = Article::first();
-        require dirname(__FILE__).'/../views/home.php';
+        require_once __DIR__.'/../views/home.php';
     }
 }

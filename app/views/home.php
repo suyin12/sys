@@ -1,99 +1,110 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--文档html5格式定义-->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <!--html5的页面字符设置-->
+    <meta charset=UTF-8>
     <title>Title</title>
     <style>
-        :root{          /*结构性伪类选择器*/
-            background:#FFFFE7;
+        body{
+            margin:0;
+            padding:0;
+            background:#f5f5dc;
         }
-        /*body *:not(h1){*/
-        /*background-color:limegreen;*/
-        /*}*/
-        p:first-child{  /*伪元素选择器*/
-            color:red;
+        section{
+            width:660px;
+            height:500px;
+            margin:0 auto;
         }
-        p:last-child{
-            color:blue;
-        }
-        p:first-letter{
-            font-size:2em;
-        }
-        td:empty{/*指定当元素内容为空白时*/
-            background-color:limegreen;
-            content:"no";
-        }
-        :target{
-            background:yellow;
-        }
-        /*li:nth-child(2n+1){*/
-        /*background: yellow;*/
-        /*}*/
-        /*li:nth-child(2n+2){*/
-        /*background: skyblue;*/
-        /*}*/
-        li:nth-of-type(2){
-            background: skyblue;
-        }
-        /*input[type=tel]::selection{*/
-        /*background: #dddd00;*/
-        /*}*/
-        /*input[type=tel]:disabled{*/
-        /*background: #dddd00;*/
-        /*}*/
-        input[type=tel]:enabled{
-            /*background: #dddd00;*/
-            /*-webkit-border-radius:10px;*/
-            border-radius:8px;
+        header{
+            width:100%;
         }
     </style>
 </head>
 <body>
-<h1>111111</h1>
-<p>11111111</p>
-<p>22222222</p>
-<p>33333333</p>
-<p>44444444</p>
-<table border="1">
-    <tr>
-        <td>1</td>
-        <td>1</td>
-        <td>1</td>
-        <td>1</td>
-    </tr>
-    <tr>
-        <td>a</td>
-        <td></td>
-        <td>c</td>
-        <td></td>
-    </tr>
-</table>
-<a href="#text1">1</a>
-<a href="#text2">2</a>
-<a href="#text3">3</a>
-<a href="#text4">4</a>
-<div id="text1">
-    <h2>1</h2>
-</div>
-<div id="text2">
-    <h2>2</h2>
-</div>
-<div id="text3">
-    <h2>3</h2>
-</div>
-<div id="text4">
-    <h2>4</h2>
-</div>
-<ul>
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-</ul>
-<form>
-    <input type="tel" pattern="[0-9]+" value="" />
-    <input type="submit" value="提交" />
-</form>
+<!--使用header定义页面头部-->
+<header>
+    <h2>标题</h2>
+    <!--使用nav定义页面导航条-->
+    <nav>
+        <ul>
+            <li>首页</li>
+            <li>首页</li>
+            <li>首页</li>
+            <li>首页</li>
+        </ul>
+    </nav>
+</header>
+<!--使用section定义页面主体区-->
+<section>
+    <!--使用article定义文章区-->
+    <article>
+        <!--使用header定义文章头-->
+        <header>
+            header
+        </header>
+        <!--使用aside定义文章侧边-->
+        <aside>
+            aside
+        </aside>
+        <p>文章内容</p>
+        <p>文章内容</p>
+        <!--使用footer定义文章底部信息-->
+        <footer>
+            footer
+        </footer>
+    </article>
+    <!--使用article定义文章区-->
+    <article>
+        <!--使用header定义文章头-->
+        <header>
+            header
+        </header>
+        <!--使用aside定义文章侧边-->
+        <aside>
+            aside
+        </aside>
+        <p>文章内容</p>
+        <p>文章内容</p>
+        <!--使用footer定义文章底部信息-->
+        <footer>
+            footer
+        </footer>
+    </article>
+    <!--使用article定义文章区-->
+    <article>
+        <!--使用header定义文章头-->
+        <header>
+            header
+        </header>
+        <!--使用aside定义文章侧边-->
+        <aside>
+            aside
+        </aside>
+        <p>文章内容</p>
+        <p>文章内容</p>
+        <!--使用footer定义文章底部信息-->
+        <footer>
+            footer
+        </footer>
+    </article>
+</section>
+<!--使用aside定义侧边栏信息-->
+<aside>
+    <header>
 
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">aside</a></li>
+            <li><a href="#">aside</a></li>
+            <li><a href="#">aside</a></li>
+            <li><a href="#">aside</a></li>
+        </ul>
+    </nav>
+</aside>
+<!--使用footer定义页面页脚-->
+<footer>
+    footer
+</footer>
 </body>
 </html>

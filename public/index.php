@@ -2,18 +2,13 @@
 /**
  * Date: 2017/12/1 15:38
  */
-use Illuminate\Database\Capsule\Manager as Capsule;
 
-// Autoload 自动载入
-require '../vendor/autoload.php';
-// Eloquent ORM
+//定义PUBLIC_PATH
+define('PUBLIC_PATH',__DIR__);
 
-$capsule = new Capsule;
+//启动器
+require PUBLIC_PATH.'/../bootstrap.php';
 
-$capsule->addConnection(require '../config/database.php');
-
-$capsule->bootEloquent();
-
-//路由配置
+//路由配置,开始处理
 require '../config/routes.php';
 
