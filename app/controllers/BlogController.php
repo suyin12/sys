@@ -21,5 +21,8 @@ class BlogController extends BaseController{
         $article = Article::first();
         require_once __DIR__.'/../views/blog/about.php';
     }
-
+    public function content(){
+        $article = Article::first();
+        require_once __DIR__.'/../views/blog/content.php';
+    }
 }

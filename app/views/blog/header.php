@@ -12,7 +12,7 @@
 <!--使用header定义页面头部-->
 <header id="page_header">
     <h2>suyin</h2>
-    <h3 style="text-align:left;margin:0 0 0 230px;">_____做一个有情商的人</h3>
+    <h3>_____</h3>
     <!--使用nav定义页面导航条-->
     <nav>
         <ul>
@@ -24,3 +24,4 @@
         </ul>
     </nav>
 </header>
+<nav style="height:60px"></nav>

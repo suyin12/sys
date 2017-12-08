@@ -1,24 +1,18 @@
-body{margin:0;  padding:0;  width:98%; background:#f5f5dc;  font-family:Geneva,sans-serif;  }
+html{overflow: scroll;}/*所有浏览器显示滚动条*/
+body{margin:0;padding:0; background:#f5f5dc; font-family:Geneva,sans-serif;}
 a{text-decoration: none;}
 ul{margin:0;padding:0;list-style:none;}
-header{color:black;text-align:center;border-bottom: 15px}
-article{
-    margin:10px;
-    padding:10px;
-    display:block;
-}
-nav{
-    margin:10px;
-    padding:10px;
-    display:block;
-    width:100%;
-}
+header{color:black;text-align:center;border-bottom:15px}
 header#page_header {
     margin:20px 0 0 0;
 }
 header#page_header h2{
     text-align:left;
     margin:0 0 0 200px;
+}
+header#page_header h3{
+    text-align:left;
+    margin:0 0 0 230px;
 }
 header#page_header li{
     padding:0;
@@ -38,6 +32,10 @@ section#posts{
     width:70%;
     height:auto;
     border:1px solid #D8D8D8;
+    background-color:#FAFAF7 ;
+}
+section#posts article{
+    padding:20px;
 }
 section#posts footer{
     margin:10px;
@@ -46,15 +44,13 @@ section#posts footer{
     height:50px;
     display:block;
     text-align:left;
-
 }
 section#posts aside{
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    border-radius:5px;
+    margin-top:20px;
     display:block;
     float:right;
     font-size: 12px;
+
 }
 aside#sidebar{
     -webkit-border-radius:5px;
@@ -68,11 +64,9 @@ aside#sidebar{
 }
 aside#sidebar li{
     padding:5px 15px;
-    background:url(li_incon.gif) no-repeat center left,url(li_incon.gif) repeat-x bottom ;
 }
 footer#page_footer{
     clear:both;
-    display:block;
-    width:100%;
+    padding-top: 20px;
     text-align:center;
 }
