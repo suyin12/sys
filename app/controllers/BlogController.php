@@ -19,7 +19,7 @@ class BlogController extends BaseController{
     }
     public function messageBoard(){
         $article = Article::first();
-        require_once __DIR__.'/../views/blog/about.php';
+        require_once __DIR__.'/../views/blog/messageBoard.php';
     }
     public function content(){
         $article = Article::first();
