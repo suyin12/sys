@@ -5,6 +5,7 @@
 namespace app\controllers;
 
 use app\models\Article;
+use app\models\Leave;
 use services\View;
 use services\Mail;
 
@@ -18,7 +19,7 @@ class BlogController extends BaseController{
         require_once __DIR__.'/../views/blog/about.php';
     }
     public function messageBoard(){
-        $article = Article::first();
+//        $article = Leave::first();
         require_once __DIR__.'/../views/blog/messageBoard.php';
     }
     public function content(){
